@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Random Password Generator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="head-container">
+        <h1 class="heading">
+            Random Password Generator
+        </h1>
+        <div class="subhead">
+            Generate Password of Desired Length and Characters
+        </div>
+    </div>
+    <div class="main-container">
+        <div class="password-gen">
+            <div class="pass-text">
+                Your Password
+            </div>
+                <button class="redo">
+                    <img src="./restart.png" alt="redo">
+                </button>
+                <button class="copy-text">
+                    Copy
+                </button>
+        </div>
+        <div class="len">
+            <div class="text item">
+                Length:
+            </div>
+            <div class="dec item">
+                <button class="decr">
+                    -
+                </button>
+            </div>
+            <div class="slider item">
+                6
+            </div>
+            <div class="decr item">
+                <button class="incr">+</button>
+            </div>
+        </div>
+        <div class="check">
+            <div class="upper">
+                <input type="checkbox" name="Include uppercase" id="upper" checked>
+                <label for="upper">ABC</label>
+            </div>
+            <div class="lower">
+                <input type="checkbox" name="Include lowercase" id="lower">
+                <label for="lower">abc</label>
+            </div>
+            <div class="number">
+                <input type="checkbox" name="Include number" id="number">
+                <label for="number">123</label>
+            </div>
+            <div class="special">
+                <input type="checkbox" name="Include special" id="special">
+                <label for="special">*@#$</label>
+            </div>
+        </div>
+    </div>
+    <div class="flash">
+        <div class="flash__icon">
+          <i class="icon fa fa-check-circle-o"></i>
+        </div>
+        <p class="flash__body">
+          Password Copied Succesfully!!
+        </p>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
